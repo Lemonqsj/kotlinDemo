@@ -1,0 +1,15 @@
+apply from: "../module.build.gradle"
+
+
+android {
+    defaultConfig {
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.lemon.login"
+        }
+    }
+    resourcePrefix "login_"
+}
+
+dependencies {
+    api project(':lib_base')
+}
