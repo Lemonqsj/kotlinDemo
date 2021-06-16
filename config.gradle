@@ -3,7 +3,7 @@ ext{
     android = [
             compileSdkVersion: 29,
             buildToolsVersion: "30.0.0",
-            applicationId    : "com.czl.mvvmcomponents",
+            applicationId    : "com.lemon.mvvmdemo",
             minSdkVersion    : 24,
             targetSdkVersion : 28,
             versionCode      : 102,
@@ -89,5 +89,11 @@ ext{
             'koin_fragment'                        : "org.koin:koin-androidx-fragment:${versions["koin-version"]}",
 
             'utils'                                : 'com.blankj:utilcodex:1.30.5',
+
+            'xpopup'                               : 'com.lxj:xpopup:2.2.5',
+
+            'loadsir'                              : 'com.kingja.loadsir:loadsir:1.3.8',
+
+            'lottie'                               : 'com.airbnb.android:lottie:3.5.0',
     ]
 }

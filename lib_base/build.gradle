@@ -103,4 +103,8 @@ dependencies {
 
     api rootProject.ext.dependencies["arouter_api"]
     api rootProject.ext.dependencies["arouter_compiler"]
+
+    api rootProject.ext.dependencies["xpopup"]
+    api rootProject.ext.dependencies["loadsir"]
+    api rootProject.ext.dependencies["lottie"]
 }

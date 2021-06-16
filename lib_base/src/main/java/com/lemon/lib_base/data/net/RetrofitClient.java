@@ -46,7 +46,7 @@ public class RetrofitClient {
         LogInterceptor logInterceptor = new LogInterceptor("---Retrofit---");
         logInterceptor.setPrintLevel(LogInterceptor.Level.BODY);
         logInterceptor.setColorLevel(Level.SEVERE);
-        HttpsUtils.SSLParams sslParams = new HttpsUtils.SSLParams();
+        HttpsUtils.SSLParams sslParams =HttpsUtils.getSslSocketFactory();
 
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
 //                .cookieJar()

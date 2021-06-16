@@ -30,7 +30,7 @@ class SplashActivity : BaseActivity<LoginActivitySplashBinding, SplashViewModel>
      * 初始化页面传入的数据
      */
     override fun initParam() {
-        TODO("Not yet implemented")
+
     }
 
     override fun initData() {
@@ -69,7 +69,7 @@ class SplashActivity : BaseActivity<LoginActivitySplashBinding, SplashViewModel>
     }
 
     override fun initViewObservable() {
-        TODO("Not yet implemented")
+
     }
 
     override fun initViewModelId(): Int {

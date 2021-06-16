@@ -1,5 +1,6 @@
 package com.lemon.lib_base.di
 
+import com.lemon.lib_base.base.AppViewModelFactory
 import com.lemon.lib_base.base.MyApplication
 import com.lemon.lib_base.data.DataRespository
 import com.lemon.lib_base.data.api.ApiService
@@ -20,11 +21,11 @@ val appModule = module {
 
     single<LocalDataSource> { LocalDataImpl() }
 
-
-    single { DataRespository(get(),get()) }
+    single { AppViewModelFactory(get(), get()) }
+    single { DataRespository(get(), get()) }
 
 }
 
-val factoryModule= module {  }
+val factoryModule = module { }
 
-val allModule= appModule+ factoryModule
+val allModule = appModule + factoryModule

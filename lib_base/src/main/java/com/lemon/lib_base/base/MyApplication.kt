@@ -3,8 +3,10 @@ package com.lemon.lib_base.base
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
+import com.alibaba.android.arouter.launcher.ARouter
 import com.bumptech.glide.Glide
 import com.lemon.lib_base.di.allModule
+import com.tencent.mmkv.MMKV
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -15,8 +17,8 @@ class MyApplication : Application() {
         super.onCreate()
 
         setApplication(this)
-
-
+        ARouter.init(this)
+        MMKV.initialize(this)
         startKoin{
             androidLogger()
             androidContext(this@MyApplication)

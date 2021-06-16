@@ -25,7 +25,7 @@ class ContainerFmActivity:BaseActivity<CommonContainerBinding,CommonViewModel>()
     }
 
     override fun initParam() {
-        TODO("Not yet implemented")
+
     }
 
     override fun initData() {
@@ -41,6 +41,5 @@ class ContainerFmActivity:BaseActivity<CommonContainerBinding,CommonViewModel>()
     }
 
     override fun initViewObservable() {
-        TODO("Not yet implemented")
     }
 }
